@@ -133,6 +133,8 @@ else:
 
 APP_NAME = config('APP_NAME', default='users')
 
+CLIENT_DOMAIN = config('CLIENT_DOMAIN', default='localhost:3000')
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
