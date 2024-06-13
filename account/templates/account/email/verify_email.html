@@ -1,0 +1,17 @@
+{% extends 'account/email/base.html' %}
+
+
+{% block content %}
+
+<h4>Dear {{ user_name }},</h4>
+
+<p>Welcome to {{ APP_NAME }}. Please confirm your email address by clicking on the button below.</p>
+
+<a href="{{ CLIENT_DOMAIN }}/verify-email?uidb64={{ uidb64 }}&token={{ token }}">Verify Email</a>
+
+<p>If the button doesn't work, please copy paste the following link in your browser:</p>
+
+<p>{{ CLIENT_DOMAIN }}/verify-email?uidb64={{ uidb64 }}&token={{ token }}</p>
+    
+{% endblock content %}
+    

@@ -1,0 +1,24 @@
+{% autoescape off %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ subject }}
+    </title>
+</head>
+<body>
+
+    {% block content %}{% endblock %}
+
+    <div>
+        <p>Cheers, {{ APP_NAME }} Team,</p>
+        <p>Lagos, Nigeria</p>
+
+        Copyright ©️ 2023 {{ APP_NAME }}. All rights reserved.
+    </div>
+    
+</body>
+</html>
+{% endautoescape %}
