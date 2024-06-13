@@ -131,6 +131,8 @@ else:
         ssl_require=True
     )
 
+APP_NAME = config('APP_NAME', default='users')
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
